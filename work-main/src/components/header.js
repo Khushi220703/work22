@@ -70,7 +70,7 @@ const Header = (props) => {
   const change = async () =>
   {const userNames = sessionStorage.getItem("userNames");
     try {
-      const resImage = await axios.get(`http://localhost:5000/api/signup/find-image/:${userNames}`)
+      const resImage = await axios.get(`http://work22-tau.vercel.app/find-image/:${userNames}`)
     
       
        console.log(resImage);
