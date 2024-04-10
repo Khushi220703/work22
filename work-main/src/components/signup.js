@@ -23,7 +23,7 @@ const Signup = () => {
     const data = {name,userNames,email,password};
     
     
-    const signup_ = await axios.post("http://work22-tau.vercel.app/signup66",data);
+    const signup_ = await axios.post("https://work22-tau.vercel.app/signup66",data);
   
     // const signup = await fetch(`http://localhost:5000/signup66`,{
     //   method:"POST",
