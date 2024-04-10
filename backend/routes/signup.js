@@ -4,12 +4,12 @@ const route = express.Router();
 const multer  = require('multer')
 const nodeMailer = require("nodemailer");
 
-route.get("/getAllCustomers", async (req,res)=>{
+route.get("https://work22-tau.vercel.app/getAllCustomers", async (req,res)=>{
     const user = await DribbleModel.find({});
     return res.json(user).status(200);
 })
 
-route.post("/signup66", async (req,res)=>{
+route.post("https://work22-tau.vercel.app/signup66", async (req,res)=>{
    console.log(req.body);
     const user = new DribbleModel(req.body);
    const userNames = req.body.userNames;
@@ -50,7 +50,7 @@ const storage = multer.diskStorage({
   const upload = multer({ storage: storage })
  
  
-route.put("/signup__", upload.single('image') ,async (req,res) =>
+route.put("https://work22-tau.vercel.app/signup__", upload.single('image') ,async (req,res) =>
 {  
     try {
        
@@ -80,7 +80,7 @@ route.put("/signup__", upload.single('image') ,async (req,res) =>
     
 })
 
-route.put("/signup" ,async (req,res) =>
+route.put("https://work22-tau.vercel.app/signup" ,async (req,res) =>
 {  console.log(req.body.userNames);
     
     try {
@@ -102,7 +102,7 @@ route.put("/signup" ,async (req,res) =>
     }
 })
 
-route.get("/find-image/:userNames", async(req,res)=>
+route.get("https://work22-tau.vercel.app/find-image/:userNames", async(req,res)=>
 {  const userNames = req.params.userNames;
     const userNames_ = userNames.replace(":","");
    
@@ -140,7 +140,7 @@ async function sendMail_(email)
     }
 }
 
-route.put("/signup_",async (req,res) =>
+route.put("https://work22-tau.vercel.app/signup_",async (req,res) =>
 {
     try {
         
