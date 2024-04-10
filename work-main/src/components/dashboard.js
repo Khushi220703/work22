@@ -19,7 +19,7 @@ const submit = async () =>
    try{
    
    
-   const res = await axios.put("http://localhost:5000/api/signup/signup",{userNames,locations})
+   const res = await axios.put("http://work22-tau.vercel.app/signup",{userNames,locations})
    
    
    const formData = new FormData();
@@ -29,7 +29,7 @@ const submit = async () =>
    try {
    
      
-     const res = await axios.put(`http://localhost:5000/api/signup/signup__`,formData,{
+     const res = await axios.put(`http://work22-tau.vercel.app/signup__`,formData,{
        
        headers: {
        'Content-Type': 'multipart/form-data'
