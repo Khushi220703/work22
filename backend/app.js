@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 
 const corsOptions =
 {
-    origin:"https://work22-ui.vercel.app.js",
+    origin:"",
     Credential:true,
     port : PORT,
     optionSucessStatus:200
