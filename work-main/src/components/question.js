@@ -39,7 +39,7 @@ const Question = () => {
       const userNames = sessionStorage.getItem("userNames");
       try{
         const email = sessionStorage.getItem("email");
-       const dashboard = await axios.put(`http://work22-tau.vercel.app/signup_`,{email,userNames,designer1,hire1,inspire1})
+       const dashboard = await axios.put(`https://work22-tau.vercel.app/signup_`,{email,userNames,designer1,hire1,inspire1})
        
        navigate("/mailMessage");
      }
