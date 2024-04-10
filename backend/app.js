@@ -9,11 +9,7 @@ const nodeMailer = require("nodemailer");
 
 
 const PORT = process.env.PORT || 5000;
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://work22-p3i1.vercel.app');
-  res.setHeader('Access-Control-Allow-Credentials', 'true');
-  next();
-});
+
 
 const corsOptions =
 {
