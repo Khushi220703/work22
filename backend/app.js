@@ -15,7 +15,7 @@ const corsOptions =
 {
     origin:['https://work22-p3i1.vercel.app/'],
     Credential:true,
-    port : PORT,
+   
     optionSucessStatus:200
 }
 
