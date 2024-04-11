@@ -13,10 +13,11 @@ const PORT = process.env.PORT || 5000;
 
 const corsOptions =
 {
-    origin:"*",
-    Credential:true,
-    port : PORT,
-    optionSucessStatus:200
+    origin:['https://work22-p3i1.vercel.app/api/signup'],
+    methods: ["Post" ,"Get" ,"Put"],
+    Credential:true
+     
+    
 }
 
 

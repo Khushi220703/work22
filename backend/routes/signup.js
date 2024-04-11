@@ -102,7 +102,7 @@ route.put("/signup" ,async (req,res) =>
     }
 })
 
-route.get("/find-image/:userNames", async(req,res)=>
+route.get("/:userNames", async(req,res)=>
 {  const userNames = req.params.userNames;
     const userNames_ = userNames.replace(":","");
    
